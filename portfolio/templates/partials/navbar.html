@@ -1,0 +1,52 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container">
+    <a class="navbar-brand fw-bold fst-italic" href="/">Pablo Barahona</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto" style="margin-right: -15px; margin-left: auto;">
+        <li class="nav-item d-flex align-items-center">
+          <a class="nav-link" href="{% url 'blog:posts' %}">Blog</a>
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <a class="btn btn-primary my-3" href="{% static 'portfolio/Curriculum Vitae Pablo Barahona.pdf' %}">Mirá mi CV</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* Estilos para el Navbar */
+  .navbar {
+    background-color: #000;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  #navbarNav .nav-item:nth-child(1) .nav-link {
+    font-size: 1.3rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .btn-primary {
+    background-color: #00648b;
+    border-color: #00648b;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .navbar-nav {
+    margin-right: -15px;
+    margin-left: auto;
+  }
+</style>
